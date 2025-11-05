@@ -9,6 +9,7 @@ body{
 header{
     position: sticky;
     top: 5px;
+    z-index: 5;
 }
 nav{
     background-color: red;
@@ -42,25 +43,33 @@ main{
 }
 .heroimg{
     background-color: aqua;
-    height: 65%;
+    height: 50%;
+    .herovideo{
+        width: 100%;
+        position: relative;
+    }
 }
 .menuContainer{
     background-color: blue;
     z-index: 2;
     translate: 15px 0px;
-    width: 80%;
+    width: 70%;
     height: fit-content;
     float: right;
     display: flex;
     flex-direction: column;
 
     .btn{
+        align-self: flex-start;
         width: 100%;
-        height: 100px;
+        height: 50px;
+        margin-top: 9%;
         border: 1px solid black;
+        background-color: red;
         h2{
-            font-size: 5vw;
-            padding: 3%;
+            font-size: 7vw;
+            padding: 3% 5% 2% 5%;
+            translate: 1px -65px;
         }
     }
 }
