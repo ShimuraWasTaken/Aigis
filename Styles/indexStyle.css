@@ -1,3 +1,19 @@
+/*
+1. Infinity Nikki
+2. Tomb Raider
+3. Gta 4
+4. Persona 3 Reload
+5. Alice Madness
+6. Red Dead redemption 1
+7. Batman Arkham City
+8. Gta 5
+9. Red Dead Redemption 2
+10. Catherine
+*/
+@font-face {
+    font-family: p3-font;
+    src: url(../Fonts/FOT-Skip-Std-B.otf);
+}
 *{
     margin: 0 auto;
     padding: 0;
@@ -5,6 +21,11 @@
 }
 body{
     background-color: cadetblue;
+    background-image: linear-gradient(to top, black, #0000ff00, #0000ff00, #0000ff00), url("../Images/Menu-Myr.webp") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 header{
     position: sticky;
@@ -13,17 +34,18 @@ header{
 }
 nav{
     background-color: red;
+    background: linear-gradient(to left, darkblue, #0000ff00);
     width: 100%;
     height: 70px;
 }
 .volumeSection{
     background-color: blue;
+    background: linear-gradient(to left, rgb(93, 1, 1), #0000ff00);
     float: right;
     width: 70%;
     height: 70px;
     display: flex;
     align-items: center;
-
 
     .volumeButton{
         background-color: azure;
@@ -39,18 +61,17 @@ nav{
 }
 main{
     height: 1000px;
-    background-color: crimson;
 }
 .heroimg{
-    background-color: aqua;
+    /*background-color: aqua;*/
     height: 50%;
+    background-size: 100%;
     .herovideo{
         width: 100%;
         position: relative;
     }
 }
 .menuContainer{
-    background-color: blue;
     z-index: 2;
     translate: 15px 0px;
     width: 70%;
@@ -64,17 +85,32 @@ main{
         width: 100%;
         height: 50px;
         margin-top: 9%;
-        border: 1px solid black;
         background-color: red;
+        background: linear-gradient(to left, darkblue, #0000ff00);
+        transition: 0.2s;
+        &:hover{
+            background: linear-gradient(to left, darkred, #0000ff00);
+        }
+        a{
+            width: 100%;
+            height: 10%;
+            position: absolute;
+            text-decoration: none;
+        }
         h2{
+            width: 100%;
+            height: 1vw;
+            font-family: "p3-font";
+            color: aliceblue;
             font-size: 7vw;
-            padding: 3% 5% 2% 5%;
-            translate: 1px -65px;
+            /*padding: 3% 5% 2% 5%;*/
+            translate: 5vw -8vw;
         }
     }
 }
 footer{
-    background-color: gray;
+    backdrop-filter: blur(5px);
+    border: 1px solid #ffffff80;
     width: 100%;
-    height: 100px;
+    height: 250px;
 }
